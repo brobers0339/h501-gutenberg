@@ -1,0 +1,9 @@
+---
+name: h501_gutenberg
+dependencies:
+  - python=3.11.13
+  - pip
+  - pip:
+    - ipykernel
+    - pandas
+    - seaborn
