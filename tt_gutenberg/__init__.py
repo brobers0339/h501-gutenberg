@@ -1,3 +1,3 @@
-__all__ = ["authors"]
-
 from . import authors
+
+__all__ = ["authors"]

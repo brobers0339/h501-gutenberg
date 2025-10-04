@@ -1,5 +1,4 @@
-__all__ = ["retrieve_authors", "retrieve_data"]
+from .listed import list_authors
+from .retrieve_data import get_gutenberg_data
 
-from . import retrieve_authors
-from . import retrieve_data
-
+__all__ = ["list_authors", "get_gutenberg_data"]
