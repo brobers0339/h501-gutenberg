@@ -2,6 +2,7 @@ import pandas as pd
 from .retrieve_data import get_gutenberg_data
 def count_languages():
     df = get_gutenberg_data()
+    names_and_languages = df[['gutenberg_author_id', 'author', 'language']]
     names_and_languages = df.groupby(['gutenberg_author_id', 'author'])['language'] \
                             .nunique() \
                             .reset_index()

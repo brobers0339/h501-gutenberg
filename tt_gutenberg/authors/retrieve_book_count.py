@@ -2,6 +2,7 @@ import pandas as pd
 from .retrieve_data import get_gutenberg_data
 def count_books():
     df = get_gutenberg_data()
+    names_and_books = df[['gutenberg_author_id', 'author', 'title']]
     names_and_books = df.groupby(['gutenberg_author_id', 'author'])['title'] \
                             .nunique() \
                             .reset_index()
