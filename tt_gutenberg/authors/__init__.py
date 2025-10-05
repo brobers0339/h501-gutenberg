@@ -1,8 +1,3 @@
-from .listed import list_authors
-
-__all__ = ['list_authors']
-
-
 """
 tt_gutenberg.authors package
 
@@ -20,3 +15,7 @@ list_authors : function
     
 Only the listed module is added due to no other module needing to be used outside of this package.
 """
+
+from .listed import list_authors
+
+__all__ = ['list_authors']

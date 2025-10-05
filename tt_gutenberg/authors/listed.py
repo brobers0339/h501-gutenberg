@@ -48,6 +48,7 @@ from .retrieve_book_count import count_books
 from .retrieve_authors import get_alias
 import pandas as pd
 
+# Function
 def list_authors(by_languages=True, alias=True):
     if by_languages:
         translation_df = count_languages()    
